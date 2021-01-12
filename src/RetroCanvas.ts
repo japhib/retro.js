@@ -24,7 +24,6 @@ export default class RetroCanvas {
         this.canvas.width = window.innerWidth - CANVAS_BORDER_SIZE
         this.canvas.height = window.innerHeight - CANVAS_BORDER_SIZE
         this.resizeBackbuffer()
-
         this.render()
     }
 
