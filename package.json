@@ -1,7 +1,7 @@
 {
   "name": "retro.js",
   "version": "0.0.1",
-  "description": "Retro graphics library for web, using WebGL renderer",
+  "description": "Retro graphics library for web, using canvas renderer",
   "main": "index.js",
   "scripts": {
     "preinstall": "npx use-yarn",
@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^26.0.20",
     "copy-webpack-plugin": "^7.0.0",
+    "jest": "^26.6.3",
     "ts-loader": "^8.0.14",
     "typescript": "^4.1.3",
     "use-yarn": "^2.2.0",
