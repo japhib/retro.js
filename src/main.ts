@@ -1,9 +1,7 @@
 import RetroCanvas from './RetroCanvas'
 
 let canvas = document.createElement('canvas')
-canvas.id = 'webpico'
-canvas.width = 550
-canvas.height = 550
+canvas.id = 'retro-js'
 
 document.body.appendChild(canvas)
 
