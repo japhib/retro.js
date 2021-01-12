@@ -66,7 +66,7 @@ export default class RetroCanvas {
         this.context.putImageData(this.displayImgData.img, xOffset, yOffset)
     }
 
-    clear(color: number) {
+    cls(color: number) {
         this.backbuffer.clear(color)
     }
 
@@ -87,5 +87,14 @@ export default class RetroCanvas {
            if (e2 > -dy) { err -= dy; x0  += sx; }
            if (e2 < dx) { err += dx; y0  += sy; }
         }
+    }
+
+    pget(x: number, y: number) {
+        return Color.pack(this.backbuffer.getPixel(x, y))
+    }
+
+    pset(x: number, y: number, color: number) {
+        let {r, g, b} = Color.getAllComponents(color)
+        this.backbuffer.setPixel(x, y, r, g, b)
     }
 }
